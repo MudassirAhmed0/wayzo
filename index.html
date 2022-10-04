@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAYZCO-HOME</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <style>
+        .slick-dots li{
+                
+        }
+    </style> -->
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- top header start -->
+    <div class="bg-[#525252]">
+      <div class="max-w-[1140px] h-[35px] m-auto p-1">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="mailto:support@wayzco.com">
+              <i
+                class="fa-sharp fa-solid fa-envelope text-[10px] text-[#525252] bg-[#91C33F] px-[2.5px] pt-[2.6px] pb-[.8px] mt-[3px]"></i><span
+                class="text-[16px]  ml-[8px] text-[#fff] hover:text-[#91C33F]">support@wayzco.com</span>
+            </a>
+          </div>
+          <div class=" flex gap-x-[24px] text-[15px]">
+            <i class="fa-brands fa-facebook-f text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+            <i class="fa-brands fa-instagram text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+            <i class="fa-brands fa-twitter text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header end -->
+    <!-- main navigation start -->
+    <div class="bg-[#FFFFFF]">
+      <div class="max-w-[1140px] h-[70px] m-auto p-[1rem]">
+        <div class="flex justify-between items-center">
+          <div class="image flex justify-center items-center gap-x-[20px]">
+            <i class="fa-solid fa-bars text-[25px] text-[#939598] cursor-pointer block sm:hidden"
+              onclick="openMobileMenu()"></i>
+            <img src="./assets/images/logo/logo.svg" width="150px" height="36px" alt="logo-img" />
+          </div>
+          <div class="hidden sm:block ">
+            <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
+              <li class="hover:text-[#91C33F]"><a href="index.html">Home</a></li>
+              <li class="hover:text-[#91C33F]">
+                <a href="our-services.html">Our Service</a>
+              </li>
+              <li class="hover:text-[#91C33F]"><a href="faq.html">FAQs</a>
+              </li>
+              <li class="hover:text-[#91C33F]"><a href="contact.html">Contact</a></li>
+              <li class="hover:text-[#91C33F]"><a>العربية</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main navigation end -->
+    <!-- mobile menu start -->
+    <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-white z-[5] flex flex-col justify-between hidden">
+      <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+        onclick="openMobileMenu()"></i>
+      <ul class=" py-[70px] text-[20px] text-[#333333]">
+        <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+          <a href="our-services.html">Our Service</a>
+        </li>
+        <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+          <a href="faq.html">FAQs</a>
+        </li>
+        <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+          <a href="contact.html">Contact</a>
+        </li>
+        <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+          <a>العربية</a>
+        </li>
+      </ul>
+      <div class="h-[80px] border-t-[1px] border-[#333] flex justify-between items-center px-[20px]">
+        <div class=" flex gap-x-[24px] text-[15px]">
+          <i class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+          <i class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+          <i class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+        </div>
+        <div class="flex justify-between items-center gap-x-[10px]">
+          <input
+            class="  w-full max-w-[300px] border py-[10px] px-[20px] font-normal text-lg leading-4 text-gray-600  placeholder-gray-600"
+            type="text" placeholder="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu end -->
+  </header>
+  <!-- header -->
+  <main>
+    <!-- section-1  start -->
+    <section class="relative overflow-hidden">
+      <div class="max-w-[1140px] h-[600px]">
+        <img src="./assets/images/bg-images/section-1.jpg" alt="bg-bike-image" width="100%" height="100%"
+          class="bg-cover absolute" />
+        <div class="relative top-[220px] z-1">
+          <div class="flex max-w-[445px] m-auto">
+            <h1 class="text-white text-[55px] font-bold leading-[65px]">
+              RIDE YOUR OWN WAYZ
+            </h1>
+          </div>
+          <div class="flex flex-col gap-y-2 text-white">
+            <h4 class="text-[20px] ml-[80px]">Download WAYZ</h4>
+            <div class="flex gap-x-3">
+              <img src="./assets/images/google-store/play-store.png" width="150px" alt="google-play-image" />
+              <img src="./assets/images/google-store/apple-store.png" width="150px" alt="app-store-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-1  end -->
+    <!-- section-2  start -->
+    <section class="relative overflow-hidden">
+      <img src="./assets/images/bg-images/section-1.jpg" alt="bg-bike-image" class="bg-cover absolute h-[100%]" />
+      <div class="bg-[#92B654] w-[100%] h-[100%] absolute opacity-[0.7] z-[1]"></div>
+      <div class="max-w-[1140px] mx-auto">
+        <div class="flex flex-col gap-y-[45px] justify-center z-[10] relative pt-[75px] pb-[75px] lg:pb-[5px]">
+          <div class="text-center max-w-[100%]">
+            <img src="./assets/images/logo/logo-2.png" class="w-[140px] h-[69px] mx-auto" alt="logo" />
+            <h1 class="text-[40px] text-white font-bold">
+              Simple Steps To Every WAYZ
+            </h1>
+          </div>
+
+          <div class="flex gap-x-[30px] lg:gap-x-[100px]">
+            <img src="./assets/images/bg-images/ctaWAyz.png"
+              class="max-w-[317px] max-h-[472px] lg:max-w-[470px] lg:max-h-[710px] hidden md:block" alt="cta-image" />
+            <div class="flex flex-col gap-y-[30px] mt-[20px] text-white px-[70px]">
+              <div class="flex items-center gap-x-[30px]">
+                <div class="flex gap-x-[20px] text-[60px] font-semibold">
+                  <span>1</span>
+                  <span>-</span>
+                </div>
+                <div class="w-[100%] xl:w-[270px]">
+                  <p class="text-[22px] font-bold">Download WAYZ App</p>
+                  <p class="text-[16px]">
+                    You can find your WAYZ app in Google and Apple store
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-x-[30px]">
+                <div class="flex gap-x-[20px] text-[60px] font-semibold">
+                  <span>2</span>
+                  <span>-</span>
+                </div>
+                <div class="w-[100%] xl:w-[270px]">
+                  <p class="text-[22px] font-bold">Locate & Choose</p>
+                  <p class="text-[16px]">
+                    To discover your nearest available E-Scooter / E-Bike
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-x-[30px]">
+                <div class="flex gap-x-[20px] text-[60px] font-semibold">
+                  <span>3</span>
+                  <span>-</span>
+                </div>
+                <div class="w-[100%] xl:w-[270px]">
+                  <p class="text-[22px] font-bold">Scan QR Code</p>
+                  <p class="text-[16px]">Scan the QR code to unlock</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-[30px]">
+                <div class="flex gap-x-[20px] text-[60px] font-semibold">
+                  <span>4</span>
+                  <span>-</span>
+                </div>
+                <div class="w-[100%] xl:w-[270px]">
+                  <p class="text-[22px] font-bold">Unlock & Go</p>
+                  <p class="text-[16px]">
+                    Enjoy your ride. Follow all traffic rules, stick to the
+                    roads where legally permitted. Wear a helmet and enjoy
+                    your WAYZ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-2  end -->
+
+    <!-- section-3  start -->
+    <section>
+      <div class="max-w-[1140px] pt-[75px] mx-auto border-b-[2px] border-[#C6D634]">
+        <div class="flex flex-col">
+          <div class="mx-auto max-w-[100%] px-[30px]">
+            <img src="./assets/images/logo/logo-3.png" class="w-[140px] h-[69px] mx-auto" alt="logo" />
+            <h1 class="text-[40px] font-bold text-[#525252] text-center">
+              WAYZ Solutions
+            </h1>
+            <p class="text-[18px] text-[#666666] text-center">
+              We Offer Affordable, Fun, And Easy Micromobility Solutions
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-y-[10px] px-[50px] md:items-center gap-x-[35px]">
+            <img src="./assets/images/bg-images/cycle-image.png"
+              class="max-[360px] max-h-[356px] sm:max-w-[486px] sm:max-h-[481px] md:w-[570px] md:h-[564px] m-auto md:m-[unset]"
+              alt="cycle-image" />
+            <div>
+              <h3 class="text-[29px] text-[#525252] font-bold pl-[20px]">
+                E-Bikes
+              </h3>
+              <div class="flex gap-x-[20px] mt-[10px]">
+                <img src="./assets/images/logo/max-speed.svg" alt="max-speed-img" class="w-[22px] h-[22px]" />
+                <span class="text-[18px] text-[#666666]">MAX SPEED 28km/h
+                </span>
+              </div>
+              <div class="flex gap-x-[20px] mt-[10px]">
+                <img src="./assets/images/logo/max-load.svg " alt="max-speed-img" class="w-[22px] h-[22px]" />
+                <span class="text-[18px] text-[#666666]">MAX LOAD 200kgs
+                </span>
+              </div>
+              <div class="flex gap-x-[20px] mt-[10px]">
+                <img src="./assets/images/logo/max-range.svg" alt="max-speed-img" class="w-[22px] h-[22px]" />
+                <span class="text-[18px] text-[#666666]">MAX RANGE 40KM
+                </span>
+              </div>
+              <div class="flex gap-x-[20px] mt-[10px]">
+                <img src="./assets/images/logo/max-specs.svg" alt="max-speed-img" class="w-[22px] h-[22px]" />
+                <span class="text-[18px] text-[#666666]">MOTOR SPECS 36V - 350W
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-3  end -->
+    <!-- section-4  start -->
+    <section>
+      <div class="max-w-[1140px] pt-[25px] mx-auto">
+        <div class="flex flex-col md:flex-row-reverse gap-y-[10px] px-[50px] md:items-center gap-x-[35px]">
+          <img src="./assets/images/bg-images/scooty-image.png"
+            class="max-[360px] max-h-[356px] sm:max-w-[486px] sm:max-h-[481px] md:w-[570px] md:h-[564px] m-auto md:m-[unset]"
+            alt="cycle-image" />
+          <div>
+            <h3 class="text-[29px] text-[#525252] font-bold pl-[20px]">
+              E-Scooters
+            </h3>
+            <div class="flex gap-x-[20px] mt-[10px]">
+              <img src="./assets/images/logo/max-speed.svg" alt="max-speed-img" class="w-[22px] h-[22px]" />
+              <span class="text-[18px] text-[#666666]">MAX SPEED 28km/h
+              </span>
+            </div>
+            <div class="flex gap-x-[20px] mt-[10px]">
+              <img src="./assets/images/logo/max-load.svg " alt="max-speed-img" class="w-[22px] h-[22px]" />
+              <span class="text-[18px] text-[#666666]">MAX LOAD 200kgs </span>
+            </div>
+            <div class="flex gap-x-[20px] mt-[10px]">
+              <img src="./assets/images/logo/max-range.svg" alt="max-speed-img" class="w-[22px] h-[22px]" />
+              <span class="text-[18px] text-[#666666]">MAX RANGE 40KM </span>
+            </div>
+            <div class="flex gap-x-[20px] mt-[10px]">
+              <img src="./assets/images/logo/max-specs.svg" alt="max-speed-img" class="w-[22px] h-[22px]" />
+              <span class="text-[18px] text-[#666666]">MOTOR SPECS 36V - 350W
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-4  end -->
+    <!-- section-5  start -->
+    <main>
+      <div class="bg-[url('./assets/images/bg/cta.jpg')] w-[100%] h-[400px]  bg-cover bg-center bg-fixed bg-no-repeat">
+        <h1 class="text-white text-[50px] font-bold text-center  items-center p-[150px] pl-[520px]">All You Need Is Your
+          PHONE​​
+        </h1>
+      </div>
+    </main>
+    <!-- section-5  end -->
+    <!-- section-6 slider start  -->
+
+    <section>
+      <div class="max-w-[1600px] pt-[75px] px-[5px] mx-auto border-b-[2px] border-[#C6D634]">
+        <div class="flex flex-col bg-[#F9F9F9]">
+          <div class="mx-auto">
+            <img src="./assets/images/logo/logo-3.png" class="w-[140px] h-[69px] mx-auto" alt="logo" />
+            <h1 class="text-[40px] font-bold text-center text-[#525252]">
+              Share Your Experience
+            </h1>
+          </div>
+        </div>
+        <div class="slider my-[10px]">
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-1.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-1" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-2.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-2" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-3.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-3" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-4.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-4" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-5.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-5" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-6.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-6" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-7.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-7" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-8.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-8" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-9.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-9" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-10.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-10" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-11.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-11" />
+          </div>
+          <div class="col-md-12">
+            <img src="./assets/images/slider-images/img-12.jpeg" class="w-[391px] h-[261px] object-cover"
+              alt="slider-img-12" />
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center gap-x-[75px] sm:gap-x-[125px] md:gap-x-[185px] bg-[#F9F9F9] py-[20px] max-w-[100%]">
+          <div class="text-[38px] text-center border rounded-full w-[50px] h-[50px] bg-[#FAEA42] text-white">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="text-[50px] text-white">
+            <i class="fa-brands fa-instagram text-[#C6D63D]"></i>
+          </div>
+          <div class="text-[50px]">
+            <i class="fa-brands fa-twitter text-[#81C418]"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-6 slider end -->
+  </main>
+  <footer class="bg-[#525252]">
+    <div class="max-w-[1300px] m-auto">
+        <div class="flex justify-between flex-wrap w-full mx-auto pb-[20px] gap-x-[2%]">
+            <div class="max-w-[20px] min-w-[290px]">
+                <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70px] w-[50%]">
+                <p class="text-white  text-[13px] my-[30px] text-justify ">The first Saudi based company in its
+                    segment
+                    focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility Driven by
+                    a
+                    fun approach with a commitment in developing alternative solutions and in sync with vision 2030.
+                </p>
+            </div>
+            <div class="mt-[80px] text-white min-w-[100px]">
+                <h2 class="mb-[10px] text-[18px] mr-[10px]">Help Links</h2>
+            </div>
+            <div class="mt-[80px] text-white">
+                <h2 class="mb-[10px] text-[18px] mr-[10px]">Get In touch</h2>
+                <p class="w-[350px] mb-[10px] text-[15px]"> Saudi business center Al-Madinah Al-Munawarah Rd Jeddah
+                </p>
+                <p class="mb-[10px] text-[15px]"> <a href="mailto:support@wayzco.com">support@mayzo.comFAQs</a> </p>
+                <p class="mb-[10px] text-[15px]"><a href="terms-and-conditions.html">Terms & conditions</a></p>
+            </div>
+            <div class="mt-[80px] text-[25px] text-white">
+                <h3 class="text-[23px]">Subscribe Newsletter</h3>
+                <div class="relative">
+                    <input type="text" placeholder="Enter Your Email Address"
+                        class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-[420px] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+                    <i
+                        class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
+                </div>
+
+                <div class="flex justify-start item-center gap-[10px] py-4">
+                    <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                        <i class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i>
+                    </div>
+                    <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                        <i class="fa-brands fa-instagram text-[18px] text-[#fff]"></i>
+                    </div>
+                    <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                        <i class="fa-brands fa-twitter text-[18px] text-[#fff]"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-[#D2DB36]">
+        <div class="max-w-[1140px] m-auto">
+            <div class="w-full h-[36px]  flex justify-center items-center">
+                <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function openMobileMenu() {
+        document.getElementById('mobile_menu').classList.toggle('hidden')
+    }
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(".slider").slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      autoplay: true,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  </script>
+</body>
+
+</html>

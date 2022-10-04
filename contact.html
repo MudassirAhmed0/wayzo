@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <!-- top header start -->
+        <div class="bg-[#525252]">
+            <div class="max-w-[1140px] h-[35px] m-auto p-1">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <a href="mailto:support@wayzco.com">
+                            <i
+                                class="fa-sharp fa-solid fa-envelope text-[10px] text-[#525252] bg-[#91C33F] px-[2.5px] pt-[2.6px] pb-[.8px] mt-[3px]"></i><span
+                                class="text-[16px]  ml-[8px] text-[#fff] hover:text-[#91C33F]">support@wayzco.com</span>
+                        </a>
+                    </div>
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <i class="fa-brands fa-facebook-f text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-twitter text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top header end -->
+        <!-- main navigation start -->
+        <div class="bg-[#FFFFFF]">
+            <div class="max-w-[1140px] h-[70px] m-auto p-[1rem]">
+                <div class="flex justify-between items-center">
+                    <div class="image flex justify-center items-center gap-x-[20px]">
+                        <i class="fa-solid fa-bars text-[25px] text-[#939598] cursor-pointer block sm:hidden"
+                            onclick="openMobileMenu()"></i>
+                        <img src="./assets/images/logo/logo.svg" width="150px" height="36px" alt="logo-img" />
+                    </div>
+                    <div class="hidden sm:block ">
+                        <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
+                            <li class="hover:text-[#91C33F]"><a href="index.html">Home</a></li>
+                            <li class="hover:text-[#91C33F]">
+                                <a href="our-services.html">Our Service</a>
+                            </li>
+                            <li class="hover:text-[#91C33F]"><a href="faq.html">FAQs</a>
+                            </li>
+                            <li class="hover:text-[#91C33F]"><a href="contact.html">Contact</a></li>
+                            <li class="hover:text-[#91C33F]"><a>العربية</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main navigation end -->
+        <!-- mobile menu start -->
+        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-white z-[5] flex flex-col justify-between hidden">
+            <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                onclick="openMobileMenu()"></i>
+            <ul class=" py-[70px] text-[20px] text-[#333333]">
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="our-services.html">Our Service</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="faq.html">FAQs</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a>العربية</a>
+                </li>
+            </ul>
+            <div class="h-[80px] border-t-[1px] border-[#333] flex justify-between items-center px-[20px]">
+                <div class=" flex gap-x-[24px] text-[15px]">
+                    <i class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                    <i class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                    <i class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                </div>
+                <div class="flex justify-between items-center gap-x-[10px]">
+                    <input
+                        class="  w-full max-w-[300px] border py-[10px] px-[20px] font-normal text-lg leading-4 text-gray-600  placeholder-gray-600"
+                        type="text" placeholder="Search" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+    </header>
+    <section>
+
+        <div class="text-center py-16">
+            <h1 class="text-[60px] text-[#525252] font-bold ">Contact us</h1>
+        </div>
+
+        <div class="container max-w-[1535px]  m-auto ">
+
+            <div
+                class="flex justify-center item-center gap-[175px]  mt-[20px] before:bg-[#f9f9f9] before:absolute before:left-0 before:w-[50%] before:h-[800px] z-10">
+                <div class="w-[50%]   h-[800px] bg-[#f9f9f9]  relative z-10">
+                    <h1 class="text-[50px] text-[#525252] font-normal py-8">Send a Message
+                    </h1>
+
+                    <form action="#">
+
+                        <input type="text" placeholder="Full Name"
+                            class="bg-[transparent] py-8 italic text-[22px] border-0 outline-none border-b-2  w-[570px] h-[50px] border-[#ccc]">
+                        <input type="text" placeholder="Email address"
+                            class="bg-[transparent] py-8 italic text-[22px] border-0 outline-none border-b-2  w-[570px] h-[50px] border-[#ccc]">
+                        <input type="text" placeholder="Phone"
+                            class="bg-[transparent] py-8 italic text-[22px] border-0 outline-none border-b-2  w-[570px] h-[50px] border-[#ccc]">
+                        <input type="text" placeholder="Subject"
+                            class="bg-[transparent] py-8 italic text-[22px] border-0 outline-none border-b-2  w-[570px] h-[50px] border-[#ccc]">
+                        <textarea name="" id="" cols="40" rows="10 " placeholder="Message"
+                            class="bg-[transparent] py-8 italic text-[22px] border-b-2 border-[#ccc] w-[100%]"></textarea>
+                        <button
+                            class="bg-[transparent] w-[150px] h-[65px] bg-[#91C33F] hover:bg-[#525252] text-[#fff] rounded text-[24px] font-bold mt-[60px]">Submit</button>
+                    </form>
+
+                </div>
+
+                <div class="mt-[55px]">
+                    <h3 class="font-extrabold text-[22px] text-[#525252]">Jeddah, Saudi Arabia Office
+                    </h3>
+                    <p class="text-[22px] text-[#525252] pl-8">Saudi business center Al-Madinah Al-Munawarah <br> Rd
+                        Jeddah</p>
+
+                    <div class="flex justify-start item-center gap-[10px] mt-[10px]">
+                        <i class="fa fa-paper-plane text-[#91C33F] mt-[8px] text-[18px]"></i>
+                        <p class="text-[22px] text-[#525252] "><a href="mailto:support@wayzco.com">Email:
+                                support@wayzco.com</a></p>
+
+                    </div>
+                    <div class="border-b-2 border-[#ccc] py-4"></div>
+
+                    <div class="flex justify-start item-center gap-[20px] py-8">
+                        <div class=" border-[#ccc] border-2 rounded-full w-[48px] h-[48px] text-center pt-[10px]">
+                            <i class="fa-brands fa-facebook-f text-[18px] text-[#525252]"></i>
+                        </div>
+                        <div class=" border-[#ccc] border-2 rounded-full w-[48px] h-[48px] text-center pt-[10px]">
+                            <i class="fa-brands fa-instagram text-[18px] text-[#525252]"></i>
+                        </div>
+                        <div class=" border-[#ccc] border-2 rounded-full w-[48px] h-[48px] text-center pt-[10px]">
+                            <i class="fa-brands fa-twitter text-[18px] text-[#525252]"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="mapouter py-[230px]">
+            <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=1200&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                    href="https://mcpenation.com/">MCPE Nation</a></div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    width: 100%;
+                    height: 400px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 100%;
+                    height: 400px;
+                }
+
+                .gmap_iframe {
+                    width: 100% !important;
+                    height: 400px !important;
+                }
+            </style>
+        </div>
+    </section> -->
+
+    <footer class="bg-[#525252]">
+        <div class="max-w-[1300px] m-auto">
+            <div class="flex justify-between flex-wrap w-full mx-auto pb-[20px] gap-x-[2%]">
+                <div class="max-w-[20px] min-w-[290px]">
+                    <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70px] w-[50%]">
+                    <p class="text-white  text-[13px] my-[30px] text-justify ">The first Saudi based company in its
+                        segment
+                        focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility Driven by
+                        a
+                        fun approach with a commitment in developing alternative solutions and in sync with vision 2030.
+                    </p>
+                </div>
+                <div class="mt-[80px] text-white min-w-[100px]">
+                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Help Links</h2>
+                </div>
+                <div class="mt-[80px] text-white">
+                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Get In touch</h2>
+                    <p class="w-[350px] mb-[10px] text-[15px]"> Saudi business center Al-Madinah Al-Munawarah Rd Jeddah
+                    </p>
+                    <p class="mb-[10px] text-[15px]"> <a href="mailto:support@wayzco.com">support@mayzo.comFAQs</a> </p>
+                    <p class="mb-[10px] text-[15px]"><a href="terms-and-conditions.html">Terms & conditions</a></p>
+                </div>
+                <div class="mt-[80px] text-[25px] text-white">
+                    <h3 class="text-[23px]">Subscribe Newsletter</h3>
+                    <div class="relative">
+                        <input type="text" placeholder="Enter Your Email Address"
+                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-[420px] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+                        <i
+                            class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
+                    </div>
+
+                    <div class="flex justify-start item-center gap-[10px] py-4">
+                        <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                            <i class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i>
+                        </div>
+                        <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                            <i class="fa-brands fa-instagram text-[18px] text-[#fff]"></i>
+                        </div>
+                        <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                            <i class="fa-brands fa-twitter text-[18px] text-[#fff]"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#D2DB36]">
+            <div class="max-w-[1140px] m-auto">
+                <div class="w-full h-[36px]  flex justify-center items-center">
+                    <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openMobileMenu() {
+            document.getElementById('mobile_menu').classList.toggle('hidden')
+        }
+    </script>
+
+</body>
+
+</html>

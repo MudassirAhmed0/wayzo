@@ -1,0 +1,520 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    </link>
+    <title>WAYZ CO</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- top header start -->
+        <div class="bg-[#525252]">
+            <div class="max-w-[1140px] h-[35px] m-auto p-1">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <a href="mailto:support@wayzco.com">
+                            <i
+                                class="fa-sharp fa-solid fa-envelope text-[10px] text-[#525252] bg-[#91C33F] px-[2.5px] pt-[2.6px] pb-[.8px] mt-[3px]"></i><span
+                                class="text-[16px]  ml-[8px] text-[#fff] hover:text-[#91C33F]">support@wayzco.com</span>
+                        </a>
+                    </div>
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <i class="fa-brands fa-facebook-f text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-twitter text-[#fff] hover:text-[#91C33F] cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top header end -->
+        <!-- main navigation start -->
+        <div class="bg-[#FFFFFF]">
+            <div class="max-w-[1140px] h-[70px] m-auto p-[1rem]">
+                <div class="flex justify-between items-center">
+                    <div class="image flex justify-center items-center gap-x-[20px]">
+                        <i class="fa-solid fa-bars text-[25px] text-[#939598] cursor-pointer block sm:hidden"
+                            onclick="openMobileMenu()"></i>
+                        <img src="./assets/images/logo/logo.svg" width="150px" height="36px" alt="logo-img" />
+                    </div>
+                    <div class="hidden sm:block ">
+                        <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
+                            <li class="hover:text-[#91C33F]"><a href="index.html">Home</a></li>
+                            <li class="hover:text-[#91C33F]">
+                                <a href="our-services.html">Our Service</a>
+                            </li>
+                            <li class="hover:text-[#91C33F]"><a href="faq.html">FAQs</a>
+                            </li>
+                            <li class="hover:text-[#91C33F]"><a href="contact.html">Contact</a></li>
+                            <li class="hover:text-[#91C33F]"><a>العربية</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main navigation end -->
+        <!-- mobile menu start -->
+        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-white z-[5] flex flex-col justify-between hidden">
+            <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                onclick="openMobileMenu()"></i>
+            <ul class=" py-[70px] text-[20px] text-[#333333]">
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="our-services.html">Our Service</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="faq.html">FAQs</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
+                    <a>العربية</a>
+                </li>
+            </ul>
+            <div class="h-[80px] border-t-[1px] border-[#333] flex justify-between items-center px-[20px]">
+                <div class=" flex gap-x-[24px] text-[15px]">
+                    <i class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                    <i class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                    <i class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                </div>
+                <div class="flex justify-between items-center gap-x-[10px]">
+                    <input
+                        class="  w-full max-w-[300px] border py-[10px] px-[20px] font-normal text-lg leading-4 text-gray-600  placeholder-gray-600"
+                        type="text" placeholder="Search" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+    </header>
+    <main class="what-we-do h-[auto] ">
+        <section class="bg-[#fff]">
+            <!-- container -->
+            <div class="max-w-[1140px] m-auto p-1">
+
+                <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-12 px-4">
+                    <h1
+                        class="lg:text-[50px] text-3xl  lg:leading-9 leading-7 text-[#91C33F] font-semibold text-center">
+                        FAQ
+                    </h1>
+
+                    <div
+                        class="focus:outline-none focus:ring focus:ring-offset-2 focus:ring-gray-800 w-full h-14 border border-gray-300 md:mt-10 dark:bg-transparent mt-8 flex justify-between items-center md:py-5 md:px-6 py-5 px-4">
+                        <input
+                            class="focus:outline-none w-full font-normal text-lg leading-4 text-gray-600 dark:text-gray-300 dark:placeholder-gray-300 dark:bg-transparent placeholder-gray-600"
+                            type="text" placeholder="Search" />
+                        <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg1.svg"
+                            alt="search" />
+                        <img class="dark:block hidden"
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg1dark.svg" alt="search" />
+                    </div>
+
+                    <div class=" w-full mt-8">
+
+
+                        <div id="user_manual" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl dark:text-white lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                USER MANUAL
+                            </h1>
+                            <!-- Question 1 -->
+
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p
+                                            class="md:text-xl dark:text-white text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Where is my order?
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('user_manual',this)" id="accordion_1"
+                                        class="dark:text-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <img class="transform duration-100 dark:hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2.svg"
+                                            alt="toggler" />
+                                        <img class="transform duration-100 dark:block hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2dark.svg"
+                                            alt="toggler" />
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_1">
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        Remember you can query the status of your orders any time in My
+                                        orders in the My account section. if you are not resigered at
+                                        Mango.com, you can access dierectly in the Orders section. In
+                                        this cause, you will have enter your e-mail address and order
+                                        number.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        What is more, when your order leaves our wharehouses, we will
+                                        send you an e-mail.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="w-full my-8" />
+
+                            <!-- Question 2 -->
+
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p
+                                            class="md:text-xl dark:text-white text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            How can I exchange or return an item purchased online?
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('user_manual',this)" id="accordion_2"
+                                        class="dark:text-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <img class="transform duration-100 dark:hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2.svg"
+                                            alt="toggler" />
+                                        <img class="transform duration-100 dark:block hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2dark.svg"
+                                            alt="toggler" />
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_2">
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        Remember you can query the status of your orders any time in My
+                                        orders in the My account section. if you are not resigered at
+                                        Mango.com, you can access dierectly in the Orders section. In
+                                        this cause, you will have enter your e-mail address and order
+                                        number.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        What is more, when your order leaves our wharehouses, we will
+                                        send you an e-mail.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="w-full my-8" />
+
+                            <!-- Question 3 -->
+
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p
+                                            class="md:text-xl dark:text-white text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Can I cancel or change my Order?
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('user_manual',this)" id="accordion_3"
+                                        class="dark:text-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <img class="transform duration-100 dark:hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2.svg"
+                                            alt="toggler" />
+                                        <img class="transform duration-100 dark:block hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2dark.svg"
+                                            alt="toggler" />
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_3">
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        Remember you can query the status of your orders any time in My
+                                        orders in the My account section. if you are not resigered at
+                                        Mango.com, you can access dierectly in the Orders section. In
+                                        this cause, you will have enter your e-mail address and order
+                                        number.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        What is more, when your order leaves our wharehouses, we will
+                                        send you an e-mail.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="w-full my-8" />
+                        </div>
+
+
+                        <div id="pricingAndPayment" class="lg:mt-12 md:mt-10 mt-8">
+                            <h1
+                                class="lg:text-[30px] text-3xl dark:text-white lg:leading-9 leading-7 text-[#91C33F] font-semibold pb-[30px]">
+                                Pricing and Payment
+                            </h1>
+                            <!-- Question 1 -->
+
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p
+                                            class="md:text-xl dark:text-white text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Where is my order?
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('pricingAndPayment',this)" id="accordion_4"
+                                        class="dark:text-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <img class="transform duration-100 dark:hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2.svg"
+                                            alt="toggler" />
+                                        <img class="transform duration-100 dark:block hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2dark.svg"
+                                            alt="toggler" />
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_4">
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        Remember you can query the status of your orders any time in My
+                                        orders in the My account section. if you are not resigered at
+                                        Mango.com, you can access dierectly in the Orders section. In
+                                        this cause, you will have enter your e-mail address and order
+                                        number.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        What is more, when your order leaves our wharehouses, we will
+                                        send you an e-mail.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="w-full my-8" />
+
+                            <!-- Question 2 -->
+
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p
+                                            class="md:text-xl dark:text-white text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            How can I exchange or return an item purchased online?
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('pricingAndPayment',this)" id="accordion_5"
+                                        class="dark:text-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <img class="transform duration-100 dark:hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2.svg"
+                                            alt="toggler" />
+                                        <img class="transform duration-100 dark:block hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2dark.svg"
+                                            alt="toggler" />
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_5">
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        Remember you can query the status of your orders any time in My
+                                        orders in the My account section. if you are not resigered at
+                                        Mango.com, you can access dierectly in the Orders section. In
+                                        this cause, you will have enter your e-mail address and order
+                                        number.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        What is more, when your order leaves our wharehouses, we will
+                                        send you an e-mail.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="w-full my-8" />
+
+                            <!-- Question 3 -->
+
+                            <div class="w-full lg:px-4">
+                                <div id="mainHeading" class="flex justify-between items-center w-full">
+                                    <div class="pr-4">
+                                        <p
+                                            class="md:text-xl dark:text-white text-lg font-medium leading-7 md:leading-5 text-gray-800">
+                                            Can I cancel or change my Order?
+                                        </p>
+                                    </div>
+                                    <button onclick="toggleAccordion('pricingAndPayment',this)" id="accordion_6"
+                                        class="dark:text-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                        data-menu>
+                                        <img class="transform duration-100 dark:hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2.svg"
+                                            alt="toggler" />
+                                        <img class="transform duration-100 dark:block hidden"
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-7-svg2dark.svg"
+                                            alt="toggler" />
+                                    </button>
+                                </div>
+                                <div id="" class="hidden mt-6 w-full accordion-body accordion_6">
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        Remember you can query the status of your orders any time in My
+                                        orders in the My account section. if you are not resigered at
+                                        Mango.com, you can access dierectly in the Orders section. In
+                                        this cause, you will have enter your e-mail address and order
+                                        number.
+                                    </p>
+                                    <br />
+                                    <p class="font-normal dark:text-gray-300 text-base leading-6 text-gray-600">
+                                        What is more, when your order leaves our wharehouses, we will
+                                        send you an e-mail.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr class="w-full my-8" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="bg-[#525252]">
+        <div class="max-w-[1300px] m-auto">
+            <div class="flex justify-between flex-wrap w-full mx-auto pb-[20px] gap-x-[2%]">
+                <div class="max-w-[20px] min-w-[290px]">
+                    <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70px] w-[50%]">
+                    <p class="text-white  text-[13px] my-[30px] text-justify ">The first Saudi based company in its
+                        segment
+                        focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility Driven by
+                        a
+                        fun approach with a commitment in developing alternative solutions and in sync with vision 2030.
+                    </p>
+                </div>
+                <div class="mt-[80px] text-white min-w-[100px]">
+                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Help Links</h2>
+                </div>
+                <div class="mt-[80px] text-white">
+                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Get In touch</h2>
+                    <p class="w-[350px] mb-[10px] text-[15px]"> Saudi business center Al-Madinah Al-Munawarah Rd Jeddah
+                    </p>
+                    <p class="mb-[10px] text-[15px]"> <a href="mailto:support@wayzco.com">support@mayzo.comFAQs</a> </p>
+                    <p class="mb-[10px] text-[15px]"><a href="terms-and-conditions.html">Terms & conditions</a></p>
+                </div>
+                <div class="mt-[80px] text-[25px] text-white">
+                    <h3 class="text-[23px]">Subscribe Newsletter</h3>
+                    <div class="relative">
+                        <input type="text" placeholder="Enter Your Email Address"
+                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-[420px] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+                        <i
+                            class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
+                    </div>
+
+                    <div class="flex justify-start item-center gap-[10px] py-4">
+                        <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                            <i class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i>
+                        </div>
+                        <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                            <i class="fa-brands fa-instagram text-[18px] text-[#fff]"></i>
+                        </div>
+                        <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
+                            <i class="fa-brands fa-twitter text-[18px] text-[#fff]"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#D2DB36]">
+            <div class="max-w-[1140px] m-auto">
+                <div class="w-full h-[36px]  flex justify-center items-center">
+                    <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openMobileMenu() {
+            document.getElementById('mobile_menu').classList.toggle('hidden')
+        }
+    </script>
+    <script>
+
+
+
+        function toggleAccordion(part, element) {
+
+            var main_div;
+            if (part == 'user_manual') {
+                main_div = document.getElementById('user_manual');
+            }
+            if (part == 'pricingAndPayment') {
+                main_div = document.getElementById('pricingAndPayment');
+            }
+
+            var allDivs = main_div.querySelectorAll('.accordion-body');
+
+            for (let i = 0; i < allDivs.length; i++) {
+                console.log("allDivs[i].classList", allDivs[i].classList)
+
+
+                for (let j = 0; j < allDivs[i].classList.length; j++) {
+                    if (allDivs[i].classList[j] == element.id) {
+
+                        allDivs[i].classList.remove('hidden')
+
+                    }
+                    else {
+
+                        allDivs[i].classList.add('hidden')
+                    }
+                }
+            }
+
+
+        }
+
+//         function selectNew() {
+//     var newL = document.getElementById("list");
+//     newL.classList.toggle("hidden");
+// }
+
+// function selectedSmall() {
+//     var text = event.target.innerText;
+//     var newL = document.getElementById("list");
+//     var newText = document.getElementById("textClicked");
+//     newL.classList.add("hidden");
+//     newText.innerText = text;
+// }
+
+// function selected() {
+//     let clicked = event.target;
+//     let child = clicked.parentElement.children;
+
+//     for (let j = 0; j < child.length; j++) {
+//         if (child[j].classList.contains("bg-gray-800", "text-white")) {
+//             child[j].classList.remove("bg-gray-800", "text-white");
+//             child[j].classList.add("bg-white", "text-gray-600");
+//         }
+//     }
+
+//     clicked.classList.remove("text-gray-600", "bg-white");
+//     clicked.classList.add("bg-gray-800", "text-white");
+// }
+
+// let elements = document.querySelectorAll("[data-menu]");
+// for (let i = 0; i < elements.length; i++) {
+//     let main = elements[i];
+
+//     main.addEventListener("click", function () {
+//         let element = main.parentElement.parentElement;
+//         let indicators = main.querySelectorAll("img");
+//         let child = element.querySelector("#menu");
+//         let h = element.querySelector("#mainHeading>div>p");
+
+//         h.classList.toggle("font-semibold");
+//         child.classList.toggle("hidden");
+//         // console.log(indicators[0]);
+//         indicators[0].classList.toggle("rotate-45");
+//     });
+// } 
+    </script>
+</body>
+
+</html>
