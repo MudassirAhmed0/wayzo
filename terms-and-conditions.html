@@ -8,14 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     </link>
-    <title>WAYZ CO</title>
+    <title>WAYZCO-HOME</title>
 </head>
 
 <body>
     <header>
         <!-- top header start -->
-        <div class="bg-[#525252]">
-            <div class="max-w-[1140px] h-[35px] m-auto p-1">
+        <div class="bg-[#525252] hidden md:block">
+            <div class="max-w-[1140px] h-[35px] m-auto px-[20px] py-1">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
                         <a href="mailto:support@wayzco.com">
@@ -34,13 +34,16 @@
         </div>
         <!-- top header end -->
         <!-- main navigation start -->
-        <div class="bg-[#FFFFFF]">
-            <div class="max-w-[1140px] h-[70px] m-auto p-[1rem]">
+        <div class="bg-[#F9F9F9] sm:bg-[#fff] border-b-[1px] border-[#ddd]">
+            <div class="max-w-[1140px] h-[60px] sm:h-[70px] m-auto px-[20px] py-[16px] sm:p-[1rem]">
                 <div class="flex justify-between items-center">
-                    <div class="image flex justify-center items-center gap-x-[20px]">
-                        <i class="fa-solid fa-bars text-[25px] text-[#939598] cursor-pointer block sm:hidden"
+                    <div class="image flex justify-center items-center gap-x-[10px] sm:gap-x-[20px]">
+                        <i class="fa-solid fa-bars text-[22px] text-[#939598] cursor-pointer block sm:hidden"
                             onclick="openMobileMenu()"></i>
-                        <img src="./assets/images/logo/logo.svg" width="150px" height="36px" alt="logo-img" />
+                        <a href="/">
+                            <img src="./assets/images/logo/logo.svg" width="150px" height="36px"
+                                class="h-[28px] sm:h-[auto]" alt="logo-img" />
+                        </a>
                     </div>
                     <div class="hidden sm:block ">
                         <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
@@ -59,54 +62,96 @@
         </div>
         <!-- main navigation end -->
         <!-- mobile menu start -->
-        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-white z-[5] flex flex-col justify-between hidden">
-            <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
-                onclick="openMobileMenu()"></i>
-            <ul class=" py-[70px] text-[20px] text-[#333333]">
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="our-services.html">Our Service</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="faq.html">FAQs</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a>العربية</a>
-                </li>
-            </ul>
-            <div class="h-[80px] border-t-[1px] border-[#333] flex justify-between items-center px-[20px]">
-                <div class=" flex gap-x-[24px] text-[15px]">
-                    <i class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
-                    <i class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
-                    <i class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
-                </div>
-                <div class="flex justify-between items-center gap-x-[10px]">
-                    <input
-                        class="  w-full max-w-[300px] border py-[10px] px-[20px] font-normal text-lg leading-4 text-gray-600  placeholder-gray-600"
-                        type="text" placeholder="Search" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
+        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-whi te z-[5]  hide">
+            <div id=" " class=" w-full h-full bg-[#fff] w-[80%] flex flex-col justify-between hide-inner">
+                <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileMenu()"></i>
+                <ul class="py-[70px] text-[22px] text-[#333333]">
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="our-services.html">Our Service</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="faq.html">FAQs</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a>العربية</a>
+                    </li>
+                </ul>
+                <div
+                    class="h-[70px] border-t-[1px] border-[#ccc] flex justify-between items-center gap-x-[20px] px-[20px]">
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <i class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                    </div>
+                    <div class="flex justify-between items-center gap-x-[10px]">
+                        <!-- <input
+                            class="w-full max-w-[300px] border py-[10px] px-[15px] font-normal text-[13px] leading-4 text-gray-600  placeholder-gray-600"
+                            type="text" placeholder="Search" /> -->
+                        <i class="fa-solid fa-magnifying-glass" onclick="openMobileSearchMenu()"></i>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- mobile menu end -->
+
+
+
+
+        <!-- mobile search menu start -->
+        <div id="mobile_search_box"
+            class="fixed top-0 h-0 w-full h-full flex justify-center items-center z-[5] hide-from-top">
+            <div id=""
+                class="w-full h-[97.7%] bg-[#fff] w-[96%] flex flex-col justify-between hide-from-top-inner px-[30px] py-[70px]">
+                <i class="fa-solid fa-xmark absolute right-[34px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileSearchMenu()"></i>
+
+                <div class="">
+                    <label class="text-gray-400">What are you looking for?</label>
+                    <div class="relative  ">
+                        <input id="text_to_search"
+                            class="w-full border py-[10px] font-normal text-[30px] leading-4 text-gray-600 placeholder-gray-600 italic border-0 border-b-[1px] border-[#ddd] outline-none pr-[70px]"
+                            type="text" placeholder="Search" oninput="changeHandler(event)" />
+                        <div id="clear_text"
+                            class="absolute right-0 top-[22px]  justify-end items-center gap-x-[4px] text-[#CED2D9] hide-it"
+                            onclick="removeText()">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Clear</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <h5 class="text-[20px] font-bold py-[20px] text-gray-300">No results found</h5>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- mobile search menu end -->
+
+
     </header>
-    <main class="what-we-do h-[auto] ">
+    <main class="what-we-do h-[auto] py-[20px] md:py-[50px]">
         <section class="bg-[#fff]">
             <!-- container -->
-            <div class="max-w-[1140px] m-auto p-1">
+            <div class="max-w-[1140px] m-auto px-[20px] md:p-[20px] text-[grey] font-light">
 
+                <h1 class="lg:text-[50px] text-3xl lg:leading-9 leading-7 text-[#91C33F] font-semibold text-center">
+                    Terms & Conditions
+                </h1>
 
-
-
-                <div class="font-bold text-center text-[50px] m-[10px]">
-                    <h1 class="text-[color:#91C33f]">Terms & Conditions</h1>
-                </div>
-                <p class="my-[25px]">TERMS AND CONDITIONS</p>
+                <p class="my-[25px] ">TERMS AND CONDITIONS</p>
 
                 <p class="my-[25px]">THESE TERMS REQUIRE ARBITRATION ON AN INDIVIDUAL BASIS. ALSO, THESE TERMS SET
                     FORTH SPECIFIC REMEDIES AVAILABLE TO YOU. PLEASE SEE SECTIONS 6 AND 18 TO LEARN MORE.</p>
@@ -146,9 +191,8 @@
                     tools. Except as expressly permitted herein, the Services and/or any portion of the Services may
                     not be reproduced, sold, resold, visited or otherwise exploited for any purpose without WAYZ’s
                     express written consent. Any unauthorized use automatically terminates the permissions and/or
-                    licenses granted by us to you.</p>
-
-                <p class="my-[25px]">Copyright and Ownership. All of the content featured or displayed on the
+                    licenses granted by us to you <br>
+                    >Copyright and Ownership. All of the content featured or displayed on the
                     Services, including without limitation text, graphics, photographs, images, moving images,
                     sound, and illustrations (“Content”), is owned by WAYZ, its licensors, vendors, agents and/or
                     its Content providers. All elements of the Services, including without limitation the general
@@ -175,9 +219,7 @@
                     materials on the Services, without WAYZ’s prior written consent. You shall not use WAYZ’s name
                     or any language, pictures or symbols which could, in WAYZ’s judgment, imply WAYZ’s endorsement
                     in any (i) written or oral advertising or presentation, or (ii) brochure, newsletter, book, or
-                    other written material of whatever nature, without prior written consent.</p>
-
-                <p class="my-[25px]">Payment Terms:
+                    other written material of whatever nature, without prior written consent. <br> Payment Terms: <br>
                     5.1 Payment Method, Payments and refund policies
                     You may be required to provide WAYZ with a valid credit card, debit card, or other payment
                     account (“Payment Method”) in order to use certain Services, including Rental Services provided
@@ -204,9 +246,9 @@
                     request, but payments may take up to 7 days to appear in your account depending on your bank,
                     card or payment provider.</p>
 
-                <p class="my-[25px]">5.2 Auto-Update</p>
+                <p class="my-[25px]">5.2 Auto-Update <br> <br>
 
-                <p class="my-[25px]">WAYZ or its Platform Partner may require or make available an option for you to
+                    WAYZ or its Platform Partner may require or make available an option for you to
                     preload a balance associated with your account and automatically make payments on a recurring
                     basis (“Auto-Update”). By enabling Auto-Update, you opt to automatically reload your account
                     balance each time your account reaches or falls below zero or another specified amount. WAYZ or
@@ -256,17 +298,15 @@
                 <p class="my-[25px]">PLEASE READ THIS SECTION CAREFULLY – IT MAY SIGNIFICANTLY AFFECT YOUR LEGAL
                     RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT</p>
 
-                <p class="my-[25px]">6.1 Initial Dispute Resolution</p>
-
-                <p class="my-[25px]">The WAYZ application contains means to receive support and address any concerns
+                <p class="my-[25px]">6.1 Initial Dispute Resolution <br>
+                    The WAYZ application contains means to receive support and address any concerns
                     you may have regarding your use of Rental Services. The parties shall use their best efforts
                     through this support process to settle any dispute, claim, question, or disagreement and engage
                     in good faith negotiations which shall be a condition to either party initiating mediation,
                     arbitration, or a lawsuit.</p>
 
-                <p class="my-[25px]"> 6.2 Binding Arbitration</p>
-
-                <p class="my-[25px]">If the parties do not reach an agreed upon solution through the support
+                <p class="my-[25px]"> 6.2 Binding Arbitration <br>
+                    If the parties do not reach an agreed upon solution through the support
                     process, then either party may initiate binding arbitration as the sole means to resolve claims,
                     subject to the terms set forth below. Specifically, all claims arising out of or relating to
                     these Terms of Service, and the parties’ relationship with each other shall be finally settled
@@ -289,14 +329,12 @@
                     to discovery may be more limited in arbitration than in court.</p>
                 </p>
 
-                <p class="my-[25px]"> 6.3 Location</p>
-
-                <p class="my-[25px]">The arbitration will take place in (Courts of KSA )or a mutually agreed upon
+                <p class="my-[25px]"> 6.3 Location <br>
+                    The arbitration will take place in (Courts of KSA )or a mutually agreed upon
                     location.</p>
 
-                <p class="my-[25px]"> 6.4 Class Action Waiver.</p>
-
-                <p class="my-[25px]">the parties further agree that any arbitration shall be conducted in their
+                <p class="my-[25px]"> 6.4 Class Action Waiver <br>
+                    the parties further agree that any arbitration shall be conducted in their
                     individual capacities only and not as a class action or other representative action, and the
                     parties expressly waive their right to file a class action or seek relief on a class basis. you
                     and wayz agree that each may bring claims against the other only in your or its individual
@@ -306,31 +344,27 @@
                     basis, then the arbitration provision set forth above shall be deemed null and void in its
                     entirety and the parties shall be deemed to have not agreed to arbitrate disputes.</p>
 
-                <p class="my-[25px]"> 6.5 Litigation of Intellectual Property and Small Claims Court Claims.</p>
-
-                <p class="my-[25px]">Notwithstanding the parties’ decision to resolve all disputes through
+                <p class="my-[25px]"> 6.5 Litigation of Intellectual Property and Small Claims Court Claims.
+                    Notwithstanding the parties’ decision to resolve all disputes through
                     arbitration, either party may bring an action in state or federal court to protect its
                     intellectual property rights (“intellectual property rights” means patents, copyrights, moral
                     rights, trademarks, and trade secrets, but not privacy or publicity rights). Either party may
                     also seek relief in a small claims court for disputes or claims within the scope of that court’s
                     jurisdiction.</p>
 
-                <p class="my-[25px]">6.6 Right to Opt Out.</p>
-
-                <p class="my-[25px]">You have the right to opt-out and not be bound by the arbitration and class
+                <p class="my-[25px]">6.6 Right to Opt Out.
+                    You have the right to opt-out and not be bound by the arbitration and class
                     action waiver provisions set forth above by sending written notice of your decision to opt-out
-                    to the following address: Info@wayzco.com</p>
-                <p class="my-[25px]">The notice must be sent within15 days of your first use of Services, otherwise
+                    to the following address: Info@wayzco.com <br>
+                    The notice must be sent within15 days of your first use of Services, otherwise
                     you shall be bound to arbitrate disputes in accordance with the terms of these paragraphs. If
                     you opt-out of these arbitration provisions, WAYZ also will not be bound by them.</p>
 
-                <p class="my-[25px]">6.7 Changes to this Section.</p>
-
-                <p class="my-[25px]">WAYZ will provide prior written notice of any changes to this section. Changes
+                <p class="my-[25px]">6.7 Changes to this Section. <br>
+                    WAYZ will provide prior written notice of any changes to this section. Changes
                     will become effective only after prior written notice and will apply prospectively only to any
-                    claims arising after the notice period.</p>
-
-                <p class="my-[25px]">7. Solicited Submission Policy. Where WAYZ has specifically invited or
+                    claims arising after the notice period. <br>
+                    7. Solicited Submission Policy. Where WAYZ has specifically invited or
                     requested submissions or comments, WAYZ encourages you to submit content to WAYZ that you have
                     created for consideration in connection with such requests (“User Submissions”). User
                     Submissions remains the intellectual property of the individual user. By submitting content to
@@ -383,9 +417,8 @@
                     or may impose in our sole discretion an unreasonable or disproportionately large load on our
                     infrastructure; (ii) interfere or attempt to interfere with the proper working of the site or
                     any activities conducted on the Services; or (iii) bypass any measures we may use to prevent or
-                    restrict access to the Services. </p>
-
-                <p class="my-[25px]">11. Right to Takedown Content. Except as disclosed in our Privacy Policy, we
+                    restrict access to the Services. <br>
+                    11. Right to Takedown Content. Except as disclosed in our Privacy Policy, we
                     will not monitor, edit, or disclose the contents of a user’s e-mail or content posted to the
                     Services unless required in the course of normal maintenance of the Services and its systems or
                     unless required to do so by law or in the good-faith belief that such action is necessary to:
@@ -538,9 +571,8 @@
                     or similar breaches. All sections which by their context ought to survive this agreement shall
                     survive any termination or expiration of this Agreement.</p>
 
-                <p class="my-[25px]">Please provide the following notice:</p>
-
-                <p class="my-[25px]">Identify the copyrighted work or other intellectual property that you claim has
+                <p class="my-[25px]">Please provide the following notice: <br>
+                    Identify the copyrighted work or other intellectual property that you claim has
                     been infringed;</p>
                 <p class="my-[25px]">Identify the material on the Services that you claim is infringing, with enough
                     detail so that we may locate it on the Services;</p>
@@ -550,7 +582,7 @@
                     information in your notice is accurate, and (b) that you are the owner of the copyright interest
                     involved or that you are authorized to act on behalf of that owner;</p>
                 <p class="my-[25px]">Your address, telephone number, and email address; and</p>
-                <p class="my-[25px]">Your physical or electronic signature.
+                <p class="my-[25px]">Your physical or electronic signature. <br>
                     We may give notice to our users of any infringement notice by means of a general notice on any
                     of our Services, electronic mail to a user’s email address in our records, or by written
                     communication sent by first-class mail to a user’s physical address in our records. If you
@@ -558,9 +590,8 @@
                     designated agent that includes the information below. To be effective, the counter-notification
                     must be a written communication that includes the following:</p>
 
-                <p class="my-[25px]">Your physical or electronic signature;</p>
-
-                <p class="my-[25px]">Identification of the material that has been removed or to which access has
+                <p class="my-[25px]">Your physical or electronic signature; <br>
+                    Identification of the material that has been removed or to which access has
                     been disabled, and the location at which the material appeared before it was removed or access
                     to it was disabled;</p>
 
@@ -582,11 +613,12 @@
                 <p class="my-[25px]">26. Copyright Notice. All design, graphics, text selections, arrangements, and
                     all software are Copyright © Wayzco.com and its related companies or its licensors. ALL RIGHTS
                     RESERVED.</p>
+                <br>
 
-                <h1>Safety/Handbook of Rules</h1>
-
-                <h2>Make sure you’re using WAYZ the right way</h2>
-
+                <h1 class="font-bold">Safety/Handbook of Rules</h1>
+                <br>
+                <h2 class="font-bold">Make sure you’re using WAYZ the right way</h2>
+                <br>
                 <ul>
                     <li>– Be aware of your surroundings</li>
                     <li>– Keep note of where you’re riding — avoid other vehicles and pedestrians. Riding a scooter
@@ -634,36 +666,41 @@
         </section>
     </main>
     <footer class="bg-[#525252]">
-        <div class="max-w-[1300px] m-auto">
-            <div class="flex justify-between flex-wrap w-full mx-auto pb-[20px] gap-x-[2%]">
-                <div class="max-w-[20px] min-w-[290px]">
-                    <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70px] w-[50%]">
-                    <p class="text-white  text-[13px] my-[30px] text-justify ">The first Saudi based company in its
-                        segment
-                        focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility Driven by
-                        a
-                        fun approach with a commitment in developing alternative solutions and in sync with vision 2030.
+        <div class="max-w-[1300px] m-auto px-[20px] 2xl:p-0">
+            <div
+                class="flex justify-between flex-wrap flex-col md:flex-row w-full mx-auto pb-[20px] gap-y-[20px] md:gap-y-0 gap-x-[2%] pt-[50px] md:pt-[80px]">
+                <div class="w-full md:max-w-[200px] md:min-w-[290px]">
+                    <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70p x] w-[50%] max-w-[170px]">
+                    <p class="text-white  text-[13px] mt-[15px] md:mt-[20px] text-justify ">The first Saudi based
+                        company in its
+                        segment focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility
+                        Driven by
+                        a fun approach with a commitment in developing alternative solutions and in sync with vision
+                        2030.
                     </p>
                 </div>
-                <div class="mt-[80px] text-white min-w-[100px]">
-                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Help Links</h2>
+                <div class="text-white min-w-[100px]">
+                    <h2 class="mb-[10px] text-[18px] font-bold mr-[10px]">Help Links</h2>
                 </div>
-                <div class="mt-[80px] text-white">
-                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Get In touch</h2>
-                    <p class="w-[350px] mb-[10px] text-[15px]"> Saudi business center Al-Madinah Al-Munawarah Rd Jeddah
+                <div class="w-full md:w-[24%] text-white">
+                    <h2 class="mb-[10px] text-[18px] font-bold mr-[10px]">Get In touch</h2>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"> Saudi business center Al-Madinah Al-Munawarah Rd
+                        Jeddah
                     </p>
-                    <p class="mb-[10px] text-[15px]"> <a href="mailto:support@wayzco.com">support@mayzo.comFAQs</a> </p>
-                    <p class="mb-[10px] text-[15px]"><a href="terms-and-conditions.html">Terms & conditions</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"><a
+                            href="mailto:support@wayzco.com">support@mayzo.com</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"><a href="faq.html">FAQs</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"><a href="terms-and-conditions.html">Terms &
+                            conditions</a></p>
                 </div>
-                <div class="mt-[80px] text-[25px] text-white">
+                <div class="w-full md:w-[26%] text-[25px] text-white">
                     <h3 class="text-[23px]">Subscribe Newsletter</h3>
                     <div class="relative">
                         <input type="text" placeholder="Enter Your Email Address"
-                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-[420px] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-full md:min-w-[320px ] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
                         <i
                             class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
                     </div>
-
                     <div class="flex justify-start item-center gap-[10px] py-4">
                         <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
                             <i class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i>
@@ -674,13 +711,12 @@
                         <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
                             <i class="fa-brands fa-twitter text-[18px] text-[#fff]"></i>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
         <div class="w-full bg-[#D2DB36]">
-            <div class="max-w-[1140px] m-auto">
+            <div class="max-w-[1140px] m-auto px-[20px] 2xl:p-0">
                 <div class="w-full h-[36px]  flex justify-center items-center">
                     <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
                 </div>
@@ -689,7 +725,27 @@
     </footer>
     <script>
         function openMobileMenu() {
-            document.getElementById('mobile_menu').classList.toggle('hidden')
+            document.getElementById('mobile_menu').classList.toggle('show')
+        }
+        function openMobileSearchMenu() {
+            document.getElementById('mobile_search_box').classList.toggle('show-from-top')
+            document.getElementById('mobile_menu').classList.remove('show')
+        }
+        function changeHandler(e) {
+            if (e.target.value.length > 0) {
+                document.getElementById('clear_text').classList.remove('hide-it')
+                document.getElementById('clear_text').classList.add('show-it')
+
+            } else {
+                document.getElementById('clear_text').classList.remove('show-it')
+                document.getElementById('clear_text').classList.add('hide-it')
+
+            }
+        }
+        function removeText() {
+            document.getElementById('text_to_search').value = '';
+            document.getElementById('clear_text').classList.remove('show-it')
+            document.getElementById('clear_text').classList.add('hide-it')
         }
     </script>
 </body>

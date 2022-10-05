@@ -8,14 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     </link>
-    <title>WAYZ CO</title>
+    <title>WAYZCO-HOME</title>
 </head>
 
 <body>
     <header>
         <!-- top header start -->
-        <div class="bg-[#525252]">
-            <div class="max-w-[1140px] h-[35px] m-auto p-1">
+        <div class="bg-[#525252] hidden md:block">
+            <div class="max-w-[1140px] h-[35px] m-auto px-[20px] py-1">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center">
                         <a href="mailto:support@wayzco.com">
@@ -34,13 +34,16 @@
         </div>
         <!-- top header end -->
         <!-- main navigation start -->
-        <div class="bg-[#FFFFFF]">
-            <div class="max-w-[1140px] h-[70px] m-auto p-[1rem]">
+        <div class="bg-[#F9F9F9] sm:bg-[#fff] border-b-[1px] border-[#ddd]">
+            <div class="max-w-[1140px] h-[60px] sm:h-[70px] m-auto px-[20px] py-[16px] sm:p-[1rem]">
                 <div class="flex justify-between items-center">
-                    <div class="image flex justify-center items-center gap-x-[20px]">
-                        <i class="fa-solid fa-bars text-[25px] text-[#939598] cursor-pointer block sm:hidden"
+                    <div class="image flex justify-center items-center gap-x-[10px] sm:gap-x-[20px]">
+                        <i class="fa-solid fa-bars text-[22px] text-[#939598] cursor-pointer block sm:hidden"
                             onclick="openMobileMenu()"></i>
-                        <img src="./assets/images/logo/logo.svg" width="150px" height="36px" alt="logo-img" />
+                        <a href="/">
+                            <img src="./assets/images/logo/logo.svg" width="150px" height="36px"
+                                class="h-[28px] sm:h-[auto]" alt="logo-img" />
+                        </a>
                     </div>
                     <div class="hidden sm:block ">
                         <ul class="flex text-[16px] text-[#525252] gap-x-[27px] font-bold">
@@ -59,41 +62,85 @@
         </div>
         <!-- main navigation end -->
         <!-- mobile menu start -->
-        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-white z-[5] flex flex-col justify-between hidden">
-            <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
-                onclick="openMobileMenu()"></i>
-            <ul class=" py-[70px] text-[20px] text-[#333333]">
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="our-services.html">Our Service</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="faq.html">FAQs</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li class="py-[20px] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[30px] mb-[1px]">
-                    <a>العربية</a>
-                </li>
-            </ul>
-            <div class="h-[80px] border-t-[1px] border-[#333] flex justify-between items-center px-[20px]">
-                <div class=" flex gap-x-[24px] text-[15px]">
-                    <i class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
-                    <i class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
-                    <i class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
-                </div>
-                <div class="flex justify-between items-center gap-x-[10px]">
-                    <input
-                        class="  w-full max-w-[300px] border py-[10px] px-[20px] font-normal text-lg leading-4 text-gray-600  placeholder-gray-600"
-                        type="text" placeholder="Search" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
+        <div id="mobile_menu" class="fixed top-0 h-0 w-full h-full bg-whi te z-[5]  hide">
+            <div id=" " class=" w-full h-full bg-[#fff] w-[80%] flex flex-col justify-between hide-inner">
+                <i class="fa-solid fa-xmark absolute right-[30px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileMenu()"></i>
+                <ul class="py-[70px] text-[22px] text-[#333333]">
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="our-services.html">Our Service</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="faq.html">FAQs</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li
+                        class="py-[10px] text-[#525252] hover:text-[#fff] hover:bg-[#91C33F] cursor-pointer px-[12%] mb-[1px]">
+                        <a>العربية</a>
+                    </li>
+                </ul>
+                <div
+                    class="h-[70px] border-t-[1px] border-[#ccc] flex justify-between items-center gap-x-[20px] px-[20px]">
+                    <div class=" flex gap-x-[24px] text-[15px]">
+                        <i class="fa-brands fa-facebook-f text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                        <i class="fa-brands fa-twitter text-[#333] hover:text-[#91C33F] cursor-pointer"></i>
+                    </div>
+                    <div class="flex justify-between items-center gap-x-[10px]">
+                        <!-- <input
+                            class="w-full max-w-[300px] border py-[10px] px-[15px] font-normal text-[13px] leading-4 text-gray-600  placeholder-gray-600"
+                            type="text" placeholder="Search" /> -->
+                        <i class="fa-solid fa-magnifying-glass" onclick="openMobileSearchMenu()"></i>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- mobile menu end -->
+
+
+
+
+        <!-- mobile search menu start -->
+        <div id="mobile_search_box"
+            class="fixed top-0 h-0 w-full h-full flex justify-center items-center z-[5] hide-from-top">
+            <div id=""
+                class="w-full h-[97.7%] bg-[#fff] w-[96%] flex flex-col justify-between hide-from-top-inner px-[30px] py-[70px]">
+                <i class="fa-solid fa-xmark absolute right-[34px] top-[30px] text-[30px] cursor-pointer hover:text-[#91C33F]"
+                    onclick="openMobileSearchMenu()"></i>
+
+                <div class="">
+                    <label class="text-gray-400">What are you looking for?</label>
+                    <div class="relative  ">
+                        <input id="text_to_search"
+                            class="w-full border py-[10px] font-normal text-[30px] leading-4 text-gray-600 placeholder-gray-600 italic border-0 border-b-[1px] border-[#ddd] outline-none pr-[70px]"
+                            type="text" placeholder="Search" oninput="changeHandler(event)" />
+                        <div id="clear_text"
+                            class="absolute right-0 top-[22px]  justify-end items-center gap-x-[4px] text-[#CED2D9] hide-it"
+                            onclick="removeText()">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Clear</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <h5 class="text-[20px] font-bold py-[20px] text-gray-300">No results found</h5>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- mobile search menu end -->
+
+
     </header>
     <main class="what-we-do h-[auto] ">
         <section class="bg-[#F9F9F9]">
@@ -101,7 +148,9 @@
             <div class="max-w-[1140px] m-auto p-1">
                 <div class="text-center h-[190px] pt-[60px]">
                     <h1 class="text-[#525252] text-[40px] font-bold">What We Do?</h1>
-                    <h2 class="text-[#666666] text-[30px]">In A Nutshell, We Are A Company Focused On</h2>
+                    <h2
+                        class="text-[#666666] text-[24px] md:text-[30px] leading-[28px] md:leading-[35px] max-w-[92%] mx-auto">
+                        In A Nutshell, We Are A Company Focused On</h2>
                 </div>
                 <div
                     class="flex justify-center flex-col sm:flex-row gap-y-[70px] text-center sm:text-left pt-[60px] sm:pt-[30px] pb-[85px]">
@@ -342,7 +391,7 @@
         <section class="bg-[#fff] h-[320px] md:h-[500px] relative">
             <div class="h-[200px] md:h-[225px] flex justify-center items-center">
                 <h2
-                    class="max-w-[80%] md:max-w-[900px] text-[30px] md:text-[39px] font-bold text-center text-[#525252] leading-[40px] md:leading-[50px]">
+                    class="max-w-[80%] md:max-w-[900px] text-[28px] md:text-[39px] font-bold text-center text-[#525252] leading-[40px] md:leading-[50px]">
                     A Billion Ways To Go <span class="text-[#91C33F]">Green</span> WAYZ Is Just One Fun Way To Do It
                 </h2>
             </div>
@@ -353,7 +402,7 @@
                 <div class="flex justify-center items-center flex-col ">
                     <img src="./assets/images/icon/logo-icon.png" class=" " />
                     <h2
-                        class="max-w-[80%] md:max-w-[900px] text-[30px] font-bold text-center text-[#525252] mt-[20px] md:text-[39px] leading-[40px] md:leading-[50px]">
+                        class="max-w-[80%] md:max-w-[900px] text-[28px] md:text-[39px] font-bold text-center text-[#525252] mt-[20px] leading-[40px] md:leading-[50px]">
                         Make sure you’re using WAYZ the right way
                     </h2>
                 </div>
@@ -364,7 +413,7 @@
                         <img src="./assets/images/cycle.svg" class="" />
                     </div>
                     <div class="text-[#525252] pl-[40px] w-full">
-                        <div class="pb-[40px] relative pl-[50px]">
+                        <div class="pb-[40px] relative pl-[40px] md:pl-[50px] pr-[15px]">
                             <i class="fa-solid fa-chevron-right absolute left-[-5px] text-[38px] text-[#91C33F]"></i>
                             <h5 class="text-[18px] font-bold pb-[5px]">Be aware of your surroundings</h5>
                             <p class="text-[16px]">
@@ -373,7 +422,7 @@
                                 eyes and ears open. However, don’t forget to get some fresh air and enjoy your ride!
                             </p>
                         </div>
-                        <div class="pb-[40px] relative pl-[50px]">
+                        <div class="pb-[40px] relative pl-[40px] md:pl-[50px] pr-[15px]">
                             <i class="fa-solid fa-chevron-right absolute left-[-5px] text-[38px] text-[#C6D634]"></i>
                             <h5 class="text-[18px] font-bold pb-[5px]">Follow the laws of traffic</h5>
                             <p class="text-[16px]">
@@ -386,7 +435,7 @@
                                 <li class="list-disc"> signs and stop signs.</li>
                             </ul>
                         </div>
-                        <div class="pb-[40px] relative pl-[50px]">
+                        <div class="pb-[40px] relative pl-[40px] md:pl-[50px] pr-[15px]">
                             <i class="fa-solid fa-chevron-right absolute left-[-5px] text-[38px] text-[#C6D634]"></i>
                             <h5 class="text-[18px] font-bold pb-[5px]">Park carefully and responsibly</h5>
                             <p class="text-[16px]">
@@ -402,36 +451,41 @@
         </div>
     </main>
     <footer class="bg-[#525252]">
-        <div class="max-w-[1300px] m-auto">
-            <div class="flex justify-between flex-wrap w-full mx-auto pb-[20px] gap-x-[2%]">
-                <div class="max-w-[20px] min-w-[290px]">
-                    <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70px] w-[50%]">
-                    <p class="text-white  text-[13px] my-[30px] text-justify ">The first Saudi based company in its
-                        segment
-                        focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility Driven by
-                        a
-                        fun approach with a commitment in developing alternative solutions and in sync with vision 2030.
+        <div class="max-w-[1300px] m-auto px-[20px] 2xl:p-0">
+            <div
+                class="flex justify-between flex-wrap flex-col md:flex-row w-full mx-auto pb-[20px] gap-y-[20px] md:gap-y-0 gap-x-[2%] pt-[50px] md:pt-[80px]">
+                <div class="w-full md:max-w-[200px] md:min-w-[290px]">
+                    <img src="./assets/images/logo/logo.svg" alt="" class="mt-[70p x] w-[50%] max-w-[170px]">
+                    <p class="text-white  text-[13px] mt-[15px] md:mt-[20px] text-justify ">The first Saudi based
+                        company in its
+                        segment focusing on providing ECO-Friendly solutions through fun, safe and reliable E-mobility
+                        Driven by
+                        a fun approach with a commitment in developing alternative solutions and in sync with vision
+                        2030.
                     </p>
                 </div>
-                <div class="mt-[80px] text-white min-w-[100px]">
-                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Help Links</h2>
+                <div class="text-white min-w-[100px]">
+                    <h2 class="mb-[10px] text-[18px] font-bold mr-[10px]">Help Links</h2>
                 </div>
-                <div class="mt-[80px] text-white">
-                    <h2 class="mb-[10px] text-[18px] mr-[10px]">Get In touch</h2>
-                    <p class="w-[350px] mb-[10px] text-[15px]"> Saudi business center Al-Madinah Al-Munawarah Rd Jeddah
+                <div class="w-full md:w-[24%] text-white">
+                    <h2 class="mb-[10px] text-[18px] font-bold mr-[10px]">Get In touch</h2>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"> Saudi business center Al-Madinah Al-Munawarah Rd
+                        Jeddah
                     </p>
-                    <p class="mb-[10px] text-[15px]"> <a href="mailto:support@wayzco.com">support@mayzo.comFAQs</a> </p>
-                    <p class="mb-[10px] text-[15px]"><a href="terms-and-conditions.html">Terms & conditions</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"><a
+                            href="mailto:support@wayzco.com">support@mayzo.com</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"><a href="faq.html">FAQs</a></p>
+                    <p class="mb-[5px] md:mb-[10px] text-[15px]"><a href="terms-and-conditions.html">Terms &
+                            conditions</a></p>
                 </div>
-                <div class="mt-[80px] text-[25px] text-white">
+                <div class="w-full md:w-[26%] text-[25px] text-white">
                     <h3 class="text-[23px]">Subscribe Newsletter</h3>
                     <div class="relative">
                         <input type="text" placeholder="Enter Your Email Address"
-                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-[420px] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
+                            class="bg-[transparent] outline-none italic text-[18px] border border-[#91C33F] w-full md:min-w-[320px ] pl-[15px] py-[10px] mt-[15px] pr-[60px]">
                         <i
                             class="fa-regular fa-envelope-open absolute top-[30px] right-[15px] text-[20px] text-[#91C33F]"></i>
                     </div>
-
                     <div class="flex justify-start item-center gap-[10px] py-4">
                         <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
                             <i class="fa-brands fa-facebook-f text-[18px] text-[#fff]"></i>
@@ -442,13 +496,12 @@
                         <div class=" border-[#ccc] border-[1px] rounded-full w-[40px] h-[40px] text-center pt-[10px]">
                             <i class="fa-brands fa-twitter text-[18px] text-[#fff]"></i>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
         <div class="w-full bg-[#D2DB36]">
-            <div class="max-w-[1140px] m-auto">
+            <div class="max-w-[1140px] m-auto px-[20px] 2xl:p-0">
                 <div class="w-full h-[36px]  flex justify-center items-center">
                     <p class="text-[14px]">© 2021 WAYZ - All rights reserved.</p>
                 </div>
@@ -457,7 +510,27 @@
     </footer>
     <script>
         function openMobileMenu() {
-            document.getElementById('mobile_menu').classList.toggle('hidden')
+            document.getElementById('mobile_menu').classList.toggle('show')
+        }
+        function openMobileSearchMenu() {
+            document.getElementById('mobile_search_box').classList.toggle('show-from-top')
+            document.getElementById('mobile_menu').classList.remove('show')
+        }
+        function changeHandler(e) {
+            if (e.target.value.length > 0) {
+                document.getElementById('clear_text').classList.remove('hide-it')
+                document.getElementById('clear_text').classList.add('show-it')
+
+            } else {
+                document.getElementById('clear_text').classList.remove('show-it')
+                document.getElementById('clear_text').classList.add('hide-it')
+
+            }
+        }
+        function removeText() {
+            document.getElementById('text_to_search').value = '';
+            document.getElementById('clear_text').classList.remove('show-it')
+            document.getElementById('clear_text').classList.add('hide-it')
         }
     </script>
 </body>

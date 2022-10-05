@@ -6,3 +6,52 @@ svg {
   max-width: 167px;
   max-height: 167px; 
 }
+.hide {
+  visibility :hidden;
+  opacity: 0;
+  background-color: rgba(26,33,46,0.9);
+  transition: all .5s ease-in;
+}
+.hide-inner {
+  transform: translateX(-100%);
+  transition: all .5s ease-in;
+ }
+.show {
+  visibility :visible;
+  opacity: 1;
+  transition: all .5s ease-in;
+}
+.show .hide-inner {
+  visibility :visible;
+  opacity: 1;
+  transition: all .5s ease-in;
+  transform: translateX(0);
+}
+
+.hide-from-top {
+  visibility :hidden;
+  opacity: 0;
+  background-color: rgba(26,33,46,0.9);
+  transition: all .5s ease-in;
+}
+.hide-from-top-inner {
+  transform: translateY(-100%);
+  transition: all .5s ease-in;
+ }
+.show-from-top {
+  visibility :visible;
+  opacity: 1;
+  transition: all .5s ease-in;
+}
+.show-from-top .hide-from-top-inner {
+  visibility :visible;
+  opacity: 1;
+  transition: all .5s ease-in;
+  transform: translateY(0);
+}
+.hide-it {
+  display: none;
+}
+.show-it {
+  display: flex !important;
+}
